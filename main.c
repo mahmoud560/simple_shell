@@ -8,6 +8,8 @@
  *
  * Return: 0 on success, 1 on error
  */
+
+
 int main(int ac, char **av)
 {
 	info_t info[] = { INFO_INIT };
@@ -40,6 +42,5 @@ int main(int ac, char **av)
 	}
 	populate_env_list(info);
 	read_history(info);
-	hsh(info, av);
 	return (EXIT_SUCCESS);
 }
